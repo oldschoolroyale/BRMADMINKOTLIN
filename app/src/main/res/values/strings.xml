@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">BrmAdminKotlin</string>
+    <string name="enter_code">Введите данные</string>
+    <string name="autorization">Авторизоваться</string>
+    <string name="login_title">Заполните поля логин и пароль для авторизации</string>
+    <string name="text_login">Логин</string>
+    <string name="text_password">Пароль</string>
+    <string name="empty_text">Тут пока ничего нет :)</string>
+    <string name="empty_team">В этой команде пока нету пользователей</string>
+    <string name="medications_category">Категория препаратов</string>
+    <string name="choose">Выбрать</string>
+    <string name="town_category">Выберите область</string>
+    <string name="region_category">Выберите регион</string>
+    <string name="manager_category">Выберите менеджера</string>
+    <string name="ready">Готово</string>
+    <string name="data_base">Дата база</string>
+    <string name="analytic">Аналитика</string>
+    <string name="exit">Выйти</string>
+
+    <string-array name="managerArray">
+        <item>Ботиров Жамшид</item>
+        <item>Юлдуз Турсунова</item>
+        <item>Каршиев Рустам</item>
+        <item>Таваккал Акрамов</item>
+        <item>Холмуминов Маруф</item>
+        <item>Асадуллаев Шухратилло</item>
+        <item>Карриев Кахрамон</item>
+        <item>Рахимов Голиб</item>
+        <item>Байкунусова Шахноза</item>
+        <item>Без менеджера</item>
+    </string-array>
+    <string-array name="categoryOfMedications">
+        <item>Кардио-невро-препараты</item>
+        <item>Уро-гинекология</item>
+        <item>Эндокринология</item>
+        <item>Парентеральное-питание</item>
+        <item>Антибиотики</item>
+        <item>Аптечные-препараты</item>
+        <item>Общая-категория</item>
+    </string-array>
+    <string-array name="townCategory">
+        <item>Ташкент</item>
+        <item>Ташкентская-область</item>
+        <item>Сырдарьинская-область</item>
+        <item>Навоинская-область</item>
+        <item>Бухарская-область</item>
+        <item>Наманганская-область</item>
+        <item>Ферганская-область</item>
+        <item>Жиззахская-область</item>
+        <item>Самаркандская-область</item>
+        <item>Андижанская-область</item>
+        <item>Хорезмская-область</item>
+        <item>Ресупблика-Каракалпакия</item>
+        <item>Кашкадарьинская-область</item>
+        <item>Сурхандарьинская-область</item>
+    </string-array>
+    <string-array name="dataCategory">
+        <item>Doctor</item>
+        <item>Pharmacy</item>
+    </string-array>
+
+</resources>

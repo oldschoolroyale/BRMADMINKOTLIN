@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/notes_menu_settings"
+    android:title="Settings"
+    app:showAsAction="ifRoom"
+    android:icon="@drawable/ic_settings_black_24dp"
+    android:iconTint="@android:color/white"/>
+    <item
+        android:id="@+id/notes_menu_data_base"
+        android:title="@string/data_base"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/notes_menu_analytics"
+        android:title="@string/analytic"
+        app:showAsAction="never"/>
+</menu>
