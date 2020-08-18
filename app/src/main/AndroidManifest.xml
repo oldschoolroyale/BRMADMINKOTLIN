@@ -10,21 +10,24 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.DataBaseEditor"></activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key" />
-        <activity android:name="com.brm.brmadminkotlin.activities.DataBaseActivity"></activity>
-        <activity android:name="com.brm.brmadminkotlin.activities.DetailsActivity" />
-        <activity android:name="com.brm.brmadminkotlin.activities.NotesActivity" />
-        <activity android:name="com.brm.brmadminkotlin.activities.SettingsActivity" />
-        <activity android:name="com.brm.brmadminkotlin.activities.LoginActivity">
+
+        <activity android:name=".activities.DataBaseActivity" />
+        <activity android:name=".activities.DetailsActivity" />
+        <activity android:name=".activities.NotesActivity" />
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.brm.brmadminkotlin.activities.MainActivity" />
+        <activity android:name=".activities.MainActivity" />
     </application>
 
 </manifest>

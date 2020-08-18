@@ -1,6 +1,7 @@
 package com.brm.brmadminkotlin.activities
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -130,6 +131,10 @@ class DataBaseActivity : MvpAppCompatActivity(), DataBaseView {
     }
 
     override fun itemClick(position: Int) {
-        TODO("Not yet implemented")
+        val intent = Intent(applicationContext, DataBaseEditor::class.java)
+        val stringArray = arrayListOf<String>(localArray[position].name!!,
+            localArray[position].address!!)
+        intent.putStringArrayListExtra("intentArray", stringArray)
+        startActivity(intent)
     }
 }

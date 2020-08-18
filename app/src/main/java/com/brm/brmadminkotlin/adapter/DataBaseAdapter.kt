@@ -64,6 +64,9 @@ class DataBaseAdapter(var dataBaseView: DataBaseView) : RecyclerView.Adapter<Rec
             else{
                 stateOwnerTextView.text = dataBaseList.state
             }
+            itemView.setOnClickListener {
+                dataBaseView.itemClick(adapterPosition)
+            }
         }
     }
 }
