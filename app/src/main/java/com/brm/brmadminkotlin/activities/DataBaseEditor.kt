@@ -27,14 +27,7 @@ class DataBaseEditor : MvpAppCompatActivity(), DataEditorView {
         loader = findViewById(R.id.activity_data_base_editor_dots_loader)
         saveButton = findViewById(R.id.activity_data_editor_button_save)
 
-        activity_data_editor_name_edit.setText(localArray[4])
-        activity_data_editor_address_edit.setText(localArray[5])
-
-        saveButton.setOnClickListener {
-            presenter.load(arrayOf(localArray[0], localArray[1],
-                localArray[2], localArray[3], activity_data_editor_name_edit.text.toString(),
-                activity_data_editor_address_edit.text.toString()))
-        }
+        presenter.startPrepare(localArray.toTypedArray())
     }
 
     override fun startLoading() {
@@ -44,6 +37,10 @@ class DataBaseEditor : MvpAppCompatActivity(), DataEditorView {
 
     override fun endLoading() {
         loader.visibility = View.INVISIBLE
+    }
+
+    override fun prepare(array: Array<String>) {
+        TODO("Not yet implemented")
     }
 
     override fun showError(error: String) {

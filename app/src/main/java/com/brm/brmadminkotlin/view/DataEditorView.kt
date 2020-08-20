@@ -8,6 +8,7 @@ import com.arellomobile.mvp.viewstate.strategy.StateStrategyType
 interface DataEditorView: MvpView{
     fun startLoading()
     fun endLoading()
+    fun prepare(array: Array<String>)
     fun showError(error: String)
     fun goBack(text: String)
 }
