@@ -132,9 +132,10 @@ class DataBaseActivity : MvpAppCompatActivity(), DataBaseView {
 
     override fun itemClick(position: Int) {
         val intent = Intent(applicationContext, DataBaseEditor::class.java)
-        val stringArray = arrayListOf<String>(localArray[position].name!!,
+        val stringArray = arrayListOf(town, region, spinner.selectedItem.toString(), localArray[position].id, localArray[position].name!!,
             localArray[position].address!!)
         intent.putStringArrayListExtra("intentArray", stringArray)
         startActivity(intent)
+        finish()
     }
 }

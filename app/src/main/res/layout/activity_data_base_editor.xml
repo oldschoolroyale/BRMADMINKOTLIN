@@ -1,43 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.DataBaseEditor"
-    android:orientation="vertical"
-    android:padding="15dp">
+    >
     <LinearLayout
+        android:id="@+id/activity_data_edit_ll"
+        android:layout_above="@+id/activity_data_editor_button_save"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Имя/Название"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/activity_data_editor_name_edit"
-            android:background="@android:color/transparent"
-            android:layout_margin="5dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
         android:orientation="vertical"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Адрес"/>
-        <EditText
+        android:padding="15dp">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/activity_data_editor_address_edit"
-            android:background="@android:color/transparent"
-            android:layout_margin="5dp"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Имя/Название"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_data_editor_name_edit"
+                android:background="@android:color/transparent"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Адрес"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_data_editor_address_edit"
+                android:background="@android:color/transparent"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
     </LinearLayout>
+    <Button
+        android:id="@+id/activity_data_editor_button_save"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/ready"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:id="@+id/activity_data_base_editor_dots_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:lazyloader_dotsDist="10dp"
+        android:visibility="invisible"
+        app:lazyloader_dotsRadius="5dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="@android:color/holo_red_dark"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="@color/colorPrimary"
+        app:lazyloader_thirdDotColor="@color/yellow"/>
 
-
-</LinearLayout>
+</RelativeLayout>
